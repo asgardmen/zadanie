@@ -1,0 +1,401 @@
+/**
+Подключение символа рубля (или использовать другой способ)
+Использование: <span class="b-rub">p</span>
+**/
+@font-face {
+    font-family: "rubsvg";
+    src:url("fonts/rubsvg.eot");
+    src:url("fonts/rubsvg.eot?#iefix") format("embedded-opentype"),
+    url("fonts/rubsvg.woff2") format("woff2"),
+    url("fonts/rubsvg.woff") format("woff"),
+    url("fonts/rubsvg.ttf") format("truetype"),
+    url("fonts/rubsvg.svg#rubsvg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+.b-rub{
+    font-family: "rubsvg" !important;
+    font-style: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 73%;
+}
+.title{
+    font-family: GothamPro;
+    font-size: 37px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.35;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+}
+.titletext {
+    margin-left: 305px;
+    margin-right: 305px;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: center;
+    color: #5d5d5d;
+}
+.form_pad {
+    margin-left: 30%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 15px 25px 0 rgba(118, 34, 81, 0.2);
+}
+.input_title {
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    color: #5d5d5d;
+}
+.input {
+    width: 330px;
+    height: 50px;
+    background-color: #ffffff;
+    border: solid 1px #d2d7d7;
+}
+.submit {
+    width: 340px;
+    height: 54px;
+    margin-top: 45px;
+    border-radius: 50px;
+    background-color: #f3295d;
+    font-family: GothamPro;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.71;
+    letter-spacing: 1.4px;
+    color: #ffffff;
+}
+.form_inner {
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 45px;
+}
+#form_ansver {
+    position: fixed;
+    left: 35%;
+    top: 35%;
+    width: 430px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 15px 25px 0 rgba(118, 34, 81, 0.2);
+    font-family: GothamPro;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0c6d16;
+    z-index: 9999;
+    visibility: hidden;
+    text-align: center;
+    padding-top: 50px;
+    -moz-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
+
+.ansver_text {
+margin-top: 10%;
+
+    margin-left: 30%;
+}
+.zakaz_button {
+    padding-top: 15px;
+    width: 185px;
+    height: 42px;
+    border-radius: 50px;
+    background-color: #f3295d;
+    font-family: GothamPro;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+.zakaz_button:hover {
+    background-color: #dd0c42;
+    color: #ffffff;
+    text-decoration: none;
+}
+.jumbotron {
+    background-image: url("../content/big-banner.png");
+    height: 625px;
+}
+.jum_link {
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+.jum_linkdiv {
+    margin-left: 35%;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+.jim_title {
+    width: 674px;
+    height: 100px;
+    font-family: GothamPro;
+    font-size: 50px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+.jim_text {
+    width: 617px;
+    height: 81px;
+    margin-top: 36px;
+    font-family: OpenSans;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+.jim_button {
+    width: 617px;
+    height: 81px;
+    margin-top: 84px;
+    padding-top: 15px;
+    font-family: OpenSans;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+.block_title {
+    font-family: GothamPro;
+    font-size: 37px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.35;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+}
+.item {
+    height: 70px;
+}
+.item_title {
+    margin-left: 5px;
+    font-family: GothamPro;
+    font-size: 22px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+.item_text {
+    margin-left: 5px;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    color: #5d5d5d;
+}
+.item_image {
+    width: 70px;
+}
+.catalog {
+    margin-top: 55px;
+}
+.cart {
+
+
+    box-shadow: 0 10px 20px 0 rgba(88, 59, 133, 0.22);
+    background-color: #ffffff;
+    border: solid 1px #dcd8e4;
+}
+.cart_image{
+    text-align:center;
+    display:block;
+    margin:auto;
+}
+.cart_name {
+    width: 235px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: GothamPro;
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.12;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+}
+.cart_text {
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    text-align: center;
+    color: #5d5d5d;
+}
+.cart_price {
+    position: relative;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    text-align: center;
+    color: #5d5d5d;
+}
+.cart_price_old {
+    position: absolute;
+    left: 30%;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.63;
+    letter-spacing: normal;
+    color: #f3295d;
+    text-decoration: line-through red;
+}
+.cart_button {
+    margin-top: 10px;
+    padding-top: 15px;
+    font-family: GothamPro;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #000000;
+    text-align: center;
+    width: 235px;
+    height: 44px;
+    background-color: #ffffff;
+}
+.cart_button:hover {
+    background-color: #f3295d;
+
+
+}
+.cart_link {
+
+    font-family: GothamPro;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #000000;
+    text-align: center;
+}
+.cart_link:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+.see_all {
+    width: 287px;
+    height: 42px;
+    border-radius: 30px;
+    border: solid 1px #f3295d;
+    font-family: GothamPro;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #f3295d;
+    padding-top: 15px;
+}
+.see_all:hover {
+    background-color: #f3295d;
+    color: #ffffff;
+    text-decoration: none;
+}
+.back_email {
+    margin-top: 130px;
+}
+.jum_link .text-style-1 {
+    font-family: PingFangSC;
+}
