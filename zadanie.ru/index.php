@@ -28,7 +28,7 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-2"></div>
-				<div class="col-lg-7 jim_button"><a class="btn zakaz_button" href="#">ЗАКАЗАТЬ ЗВОНОК</a></div>
+				<div class="col-lg-7 jim_button"><a class="btn zakaz_button" href="#form_inner">ЗАКАЗАТЬ ЗВОНОК</a></div>
 				<div class="col-lg-2"></div>
 			</div>
 
