@@ -25,7 +25,7 @@ var field = new Array("name", "email", "phone");//to_do: ask for full namespace 
 				$("#form_ansver").css('visibility', 'visible');
 			}
 			else{
-				return false;
+				return false; //bug: when 1 ansver add, need reload page 
 			};
 		})
 
