@@ -96,7 +96,8 @@
 	Для каждого клиента мы подберем оптимальные условия работы. Свяжитесь с нами, мы обязательно договоримся.
 	</div>
 		<div class="row ">
-
+<div class="col-lg-2"></div>
+			<div class="col-lg-7">
 	<div class="form_pad">
 		<div class="form_inner">
 			<form  id="form" method="post">
@@ -113,6 +114,8 @@
 			</form>
 		</div>
 	</div>
+				</div>
+			<div class="col-lg-2"></div>
 </div>
 	</div>
 	</div>
